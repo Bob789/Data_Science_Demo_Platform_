@@ -1,0 +1,51 @@
+git remote add origin https://github.com/Bob789/Final_Project_v003.git#| File/Folder              | Description                                                   |
+#| ------------------------ | ------------------------------------------------------------- |
+#| `.env`                   | Prevents exposure of passwords or API keys                    |
+#| `.venv/`, `venv/`        | Skips Python virtual environment files                        |
+#| `__pycache__/`           | Prevents storing automatically compiled Python files          |
+#| `.idea/`, `.vscode/`     | Excludes IDE configuration files (such as PyCharm or VS Code) |
+#| `*.log`, `*.tmp`         | Ignores log and temporary files                               |
+#| `.DS_Store`, `Thumbs.db` | Ignores system files created by macOS and Windows             |
+
+# Environment variables
+app_streamlit/.env
+# If you also want to ignore a root .env, uncomment the next line:
+# .env
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE settings (PyCharm, VSCode, etc.)
+.idea/
+.vscode/
+
+# Log and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Database backups or local data
+*.sqlite3
+*.db
+*.sql
+
+# App artifacts to exclude from repo
+app_fastapi/data/uploads/
+app_fastapi/models/metadata/
+app_fastapi/models/trained/
+app_fastapi/logs/
+
+# ignore folder
+temp/
